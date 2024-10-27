@@ -31,4 +31,4 @@ go version
 
 rm -f $CWD/install_golang.sh
 
-echo "Listo!"
+echo "Golang Instalado Correctamente!"
