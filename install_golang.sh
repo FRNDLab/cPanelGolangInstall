@@ -21,10 +21,10 @@ ln -s ~/go/bin/go go
 
 echo "Escribiendo variables..."
 sed -i '/:~\/bin:~\/go\/bin/d' ~/.bashrc
-echo 'PATH=$PATH:~/bin:~/go/bin' >> ~/.bashrc && source ~/.bashrc
+echo 'PATH=$PATH:$HOME/bin:$HOME/go/bin' >> ~/.bashrc && source ~/.bashrc
 
 sed -i '/^alias go=/d' ~/.bashrc
-echo 'alias go="export TMPDIR=~/tmp/; go"' >> ~/.bashrc && source ~/.bashrc
+echo 'alias go="export GOPATH=$HOME/go; export TMPDIR=$HOME/tmp/; go"' >> ~/.bashrc && source ~/.bashrc
 
 echo -n "go version: "
 go version
