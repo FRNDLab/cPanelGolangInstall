@@ -1,4 +1,4 @@
-# Instalación de Go y Air con Hot Reloading en cPanel
+# Instalación de Go y Air para Hot Reloading en cPanel
 
 Este script permite instalar la última versión de Go en cPanel, junto con Air para hot reloading en el entorno de desarrollo de Go.
 
