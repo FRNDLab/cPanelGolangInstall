@@ -24,7 +24,7 @@ sed -i '/:~\/bin:~\/go\/bin/d' ~/.bashrc
 echo 'PATH=$PATH:~/bin:~/go/bin' >> ~/.bashrc && source ~/.bashrc
 
 sed -i '/^alias go=/d' ~/.bashrc
-echo 'alias go="export TMPDIR=~/tmp/; export GOMAXPROCS=1; go"' >> ~/.bashrc && source ~/.bashrc
+echo 'alias go="export TMPDIR=~/tmp/; go"' >> ~/.bashrc && source ~/.bashrc
 
 echo -n "go version: "
 go version
