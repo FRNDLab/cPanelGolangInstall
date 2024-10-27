@@ -1,7 +1,6 @@
 #!/bin/bash
 CWD="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-# Obtén solo la primera línea de la respuesta de la API para capturar únicamente la versión
 GO_LATEST=$(curl -s https://go.dev/VERSION?m=text | head -n 1)
 
 cd ~
@@ -10,7 +9,7 @@ wget "https://go.dev/dl/$GO_LATEST.linux-amd64.tar.gz" -O $GO_LATEST.linux-amd64
 
 tar xvfz $GO_LATEST.linux-amd64.tar.gz
 
-rm -rf ~/go
+rm -rf $/go
 rm -f $GO_LATEST.linux-amd64.tar.gz
 
 echo "Creando entorno..."
@@ -32,4 +31,4 @@ go version
 
 rm -f $CWD/install_golang.sh
 
-echo "Golang ha sido instalado correctamente!"
+echo "Listo!"
